@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0149FDBF2156A5660068C361 /* AASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDAE2156A5660068C361 /* AASAppDelegate.m */; };
+		0149FDC02156A5660068C361 /* AASEmployeeListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDB42156A5660068C361 /* AASEmployeeListView.m */; };
+		0149FDC12156A5660068C361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0149FDB72156A5660068C361 /* Assets.xcassets */; };
+		0149FDC22156A5660068C361 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0149FDB82156A5660068C361 /* LaunchScreen.storyboard */; };
+		0149FDC32156A5660068C361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0149FDBA2156A5660068C361 /* Main.storyboard */; };
+		0149FDC42156A5660068C361 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDBD2156A5660068C361 /* main.m */; };
+		0149FDCE2156A7580068C361 /* AASEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDCD2156A7580068C361 /* AASEmployee.m */; };
+		0149FDD12156A7EC0068C361 /* AASEmployeeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDD02156A7EC0068C361 /* AASEmployeeService.m */; };
+		0149FDD52156A9820068C361 /* AASEmployeeListAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDD42156A9820068C361 /* AASEmployeeListAssembly.m */; };
+		0149FDDA2156AD750068C361 /* AASEmployeeListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDD92156AD750068C361 /* AASEmployeeListPresenter.m */; };
+		0149FDE32156B5880068C361 /* AASEmployeeListStateInitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDE22156B5880068C361 /* AASEmployeeListStateInitial.m */; };
+		0149FDE62156B6790068C361 /* AASEmployeeListStateData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDE52156B6790068C361 /* AASEmployeeListStateData.m */; };
+		0149FDE92156B6850068C361 /* AASEmployeeListStateError.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDE82156B6850068C361 /* AASEmployeeListStateError.m */; };
+		0149FDEC2156B6940068C361 /* AASEmployeeListStateLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDEB2156B6940068C361 /* AASEmployeeListStateLoading.m */; };
+		0149FDF02156C1C10068C361 /* AASEmployeeListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0149FDEF2156C1C10068C361 /* AASEmployeeListTableCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0149FD902156A23E0068C361 /* StateMachineExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateMachineExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0149FDAE2156A5660068C361 /* AASAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASAppDelegate.m; sourceTree = "<group>"; };
+		0149FDAF2156A5660068C361 /* AASAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASAppDelegate.h; sourceTree = "<group>"; };
+		0149FDB42156A5660068C361 /* AASEmployeeListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AASEmployeeListView.m; sourceTree = "<group>"; };
+		0149FDB52156A5660068C361 /* AASEmployeeListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListView.h; sourceTree = "<group>"; };
+		0149FDB72156A5660068C361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0149FDB92156A5660068C361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0149FDBB2156A5660068C361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0149FDBD2156A5660068C361 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0149FDBE2156A5660068C361 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0149FDC82156A6930068C361 /* AASEmployeeServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeServiceProtocol.h; sourceTree = "<group>"; };
+		0149FDC92156A6D20068C361 /* AASEmployeeServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeServiceDelegate.h; sourceTree = "<group>"; };
+		0149FDCC2156A7580068C361 /* AASEmployee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployee.h; sourceTree = "<group>"; };
+		0149FDCD2156A7580068C361 /* AASEmployee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AASEmployee.m; sourceTree = "<group>"; };
+		0149FDCF2156A7EC0068C361 /* AASEmployeeService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeService.h; sourceTree = "<group>"; };
+		0149FDD02156A7EC0068C361 /* AASEmployeeService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AASEmployeeService.m; sourceTree = "<group>"; };
+		0149FDD32156A9820068C361 /* AASEmployeeListAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListAssembly.h; sourceTree = "<group>"; };
+		0149FDD42156A9820068C361 /* AASEmployeeListAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AASEmployeeListAssembly.m; sourceTree = "<group>"; };
+		0149FDD62156AC520068C361 /* AASEmployeeListViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListViewInput.h; sourceTree = "<group>"; };
+		0149FDD72156AC5F0068C361 /* AASEmployeeListViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListViewOutput.h; sourceTree = "<group>"; };
+		0149FDD82156AD750068C361 /* AASEmployeeListPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListPresenter.h; sourceTree = "<group>"; };
+		0149FDD92156AD750068C361 /* AASEmployeeListPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AASEmployeeListPresenter.m; sourceTree = "<group>"; };
+		0149FDDC2156B3850068C361 /* AASEmployeeListStateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListStateProtocol.h; sourceTree = "<group>"; };
+		0149FDE12156B5880068C361 /* AASEmployeeListStateInitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListStateInitial.h; sourceTree = "<group>"; };
+		0149FDE22156B5880068C361 /* AASEmployeeListStateInitial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AASEmployeeListStateInitial.m; sourceTree = "<group>"; };
+		0149FDE42156B6790068C361 /* AASEmployeeListStateData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListStateData.h; sourceTree = "<group>"; };
+		0149FDE52156B6790068C361 /* AASEmployeeListStateData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AASEmployeeListStateData.m; sourceTree = "<group>"; };
+		0149FDE72156B6850068C361 /* AASEmployeeListStateError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListStateError.h; sourceTree = "<group>"; };
+		0149FDE82156B6850068C361 /* AASEmployeeListStateError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AASEmployeeListStateError.m; sourceTree = "<group>"; };
+		0149FDEA2156B6940068C361 /* AASEmployeeListStateLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListStateLoading.h; sourceTree = "<group>"; };
+		0149FDEB2156B6940068C361 /* AASEmployeeListStateLoading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AASEmployeeListStateLoading.m; sourceTree = "<group>"; };
+		0149FDEE2156C1C10068C361 /* AASEmployeeListTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AASEmployeeListTableCell.h; sourceTree = "<group>"; };
+		0149FDEF2156C1C10068C361 /* AASEmployeeListTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AASEmployeeListTableCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0149FD8D2156A23E0068C361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0149FD872156A23E0068C361 = {
+			isa = PBXGroup;
+			children = (
+				0149FD922156A23E0068C361 /* StateMachineExample */,
+				0149FD912156A23E0068C361 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0149FD912156A23E0068C361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0149FD902156A23E0068C361 /* StateMachineExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0149FD922156A23E0068C361 /* StateMachineExample */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDA92156A5660068C361 /* Classes */,
+				0149FDB62156A5660068C361 /* Resources */,
+				0149FDBC2156A5660068C361 /* Supporting files */,
+			);
+			path = StateMachineExample;
+			sourceTree = "<group>";
+		};
+		0149FDA92156A5660068C361 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDAC2156A5660068C361 /* ApplicationLayer */,
+				0149FDCA2156A73B0068C361 /* ModelLayer */,
+				0149FDAA2156A5660068C361 /* BussinesLogicLayer */,
+				0149FDB02156A5660068C361 /* PresentationLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0149FDAA2156A5660068C361 /* BussinesLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDAB2156A5660068C361 /* EmployeeService */,
+			);
+			path = BussinesLogicLayer;
+			sourceTree = "<group>";
+		};
+		0149FDAB2156A5660068C361 /* EmployeeService */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDC82156A6930068C361 /* AASEmployeeServiceProtocol.h */,
+				0149FDC92156A6D20068C361 /* AASEmployeeServiceDelegate.h */,
+				0149FDCF2156A7EC0068C361 /* AASEmployeeService.h */,
+				0149FDD02156A7EC0068C361 /* AASEmployeeService.m */,
+			);
+			path = EmployeeService;
+			sourceTree = "<group>";
+		};
+		0149FDAC2156A5660068C361 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDAD2156A5660068C361 /* AppDelegate */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		0149FDAD2156A5660068C361 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDAF2156A5660068C361 /* AASAppDelegate.h */,
+				0149FDAE2156A5660068C361 /* AASAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0149FDB02156A5660068C361 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDB12156A5660068C361 /* EmployeeList */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		0149FDB12156A5660068C361 /* EmployeeList */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDD22156A9690068C361 /* Assembly */,
+				0149FDB22156A5660068C361 /* Presenter */,
+				0149FDB32156A5660068C361 /* View */,
+			);
+			path = EmployeeList;
+			sourceTree = "<group>";
+		};
+		0149FDB22156A5660068C361 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDDB2156B3710068C361 /* State */,
+				0149FDD82156AD750068C361 /* AASEmployeeListPresenter.h */,
+				0149FDD92156AD750068C361 /* AASEmployeeListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0149FDB32156A5660068C361 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDED2156C1A80068C361 /* EmployeeListTableCell */,
+				0149FDD62156AC520068C361 /* AASEmployeeListViewInput.h */,
+				0149FDD72156AC5F0068C361 /* AASEmployeeListViewOutput.h */,
+				0149FDB52156A5660068C361 /* AASEmployeeListView.h */,
+				0149FDB42156A5660068C361 /* AASEmployeeListView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0149FDB62156A5660068C361 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDC62156A5730068C361 /* Images */,
+				0149FDC72156A57A0068C361 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0149FDBC2156A5660068C361 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDBD2156A5660068C361 /* main.m */,
+				0149FDBE2156A5660068C361 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		0149FDC62156A5730068C361 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDB72156A5660068C361 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0149FDC72156A57A0068C361 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDB82156A5660068C361 /* LaunchScreen.storyboard */,
+				0149FDBA2156A5660068C361 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0149FDCA2156A73B0068C361 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDCB2156A7450068C361 /* Employee */,
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		0149FDCB2156A7450068C361 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDCC2156A7580068C361 /* AASEmployee.h */,
+				0149FDCD2156A7580068C361 /* AASEmployee.m */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		0149FDD22156A9690068C361 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDD32156A9820068C361 /* AASEmployeeListAssembly.h */,
+				0149FDD42156A9820068C361 /* AASEmployeeListAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		0149FDDB2156B3710068C361 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDDC2156B3850068C361 /* AASEmployeeListStateProtocol.h */,
+				0149FDDF2156B3AB0068C361 /* Data */,
+				0149FDE02156B3C50068C361 /* Error */,
+				0149FDDD2156B39F0068C361 /* Initial */,
+				0149FDDE2156B3A50068C361 /* Loading */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		0149FDDD2156B39F0068C361 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDE12156B5880068C361 /* AASEmployeeListStateInitial.h */,
+				0149FDE22156B5880068C361 /* AASEmployeeListStateInitial.m */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		0149FDDE2156B3A50068C361 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDEA2156B6940068C361 /* AASEmployeeListStateLoading.h */,
+				0149FDEB2156B6940068C361 /* AASEmployeeListStateLoading.m */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		0149FDDF2156B3AB0068C361 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDE42156B6790068C361 /* AASEmployeeListStateData.h */,
+				0149FDE52156B6790068C361 /* AASEmployeeListStateData.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0149FDE02156B3C50068C361 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDE72156B6850068C361 /* AASEmployeeListStateError.h */,
+				0149FDE82156B6850068C361 /* AASEmployeeListStateError.m */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		0149FDED2156C1A80068C361 /* EmployeeListTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				0149FDEE2156C1C10068C361 /* AASEmployeeListTableCell.h */,
+				0149FDEF2156C1C10068C361 /* AASEmployeeListTableCell.m */,
+			);
+			path = EmployeeListTableCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0149FD8F2156A23E0068C361 /* StateMachineExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0149FDA62156A23F0068C361 /* Build configuration list for PBXNativeTarget "StateMachineExample" */;
+			buildPhases = (
+				0149FD8C2156A23E0068C361 /* Sources */,
+				0149FD8D2156A23E0068C361 /* Frameworks */,
+				0149FD8E2156A23E0068C361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StateMachineExample;
+			productName = StateMachineExample;
+			productReference = 0149FD902156A23E0068C361 /* StateMachineExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0149FD882156A23E0068C361 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AAS;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Aleksandr Sychev";
+				TargetAttributes = {
+					0149FD8F2156A23E0068C361 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 0149FD8B2156A23E0068C361 /* Build configuration list for PBXProject "StateMachineExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0149FD872156A23E0068C361;
+			productRefGroup = 0149FD912156A23E0068C361 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0149FD8F2156A23E0068C361 /* StateMachineExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0149FD8E2156A23E0068C361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0149FDC32156A5660068C361 /* Main.storyboard in Resources */,
+				0149FDC12156A5660068C361 /* Assets.xcassets in Resources */,
+				0149FDC22156A5660068C361 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0149FD8C2156A23E0068C361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0149FDE92156B6850068C361 /* AASEmployeeListStateError.m in Sources */,
+				0149FDC02156A5660068C361 /* AASEmployeeListView.m in Sources */,
+				0149FDF02156C1C10068C361 /* AASEmployeeListTableCell.m in Sources */,
+				0149FDCE2156A7580068C361 /* AASEmployee.m in Sources */,
+				0149FDD12156A7EC0068C361 /* AASEmployeeService.m in Sources */,
+				0149FDD52156A9820068C361 /* AASEmployeeListAssembly.m in Sources */,
+				0149FDE32156B5880068C361 /* AASEmployeeListStateInitial.m in Sources */,
+				0149FDEC2156B6940068C361 /* AASEmployeeListStateLoading.m in Sources */,
+				0149FDC42156A5660068C361 /* main.m in Sources */,
+				0149FDBF2156A5660068C361 /* AASAppDelegate.m in Sources */,
+				0149FDDA2156AD750068C361 /* AASEmployeeListPresenter.m in Sources */,
+				0149FDE62156B6790068C361 /* AASEmployeeListStateData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0149FDB82156A5660068C361 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0149FDB92156A5660068C361 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0149FDBA2156A5660068C361 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0149FDBB2156A5660068C361 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0149FDA42156A23F0068C361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0149FDA52156A23F0068C361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0149FDA72156A23F0068C361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_GCD_PERFORMANCE = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_INTERFACE_IVARS = YES;
+				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGP9B73897;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				INFOPLIST_FILE = "StateMachineExample/Supporting files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asychev.StateMachineExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0149FDA82156A23F0068C361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_GCD_PERFORMANCE = YES;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_INTERFACE_IVARS = YES;
+				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PGP9B73897;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				INFOPLIST_FILE = "StateMachineExample/Supporting files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.asychev.StateMachineExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0149FD8B2156A23E0068C361 /* Build configuration list for PBXProject "StateMachineExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0149FDA42156A23F0068C361 /* Debug */,
+				0149FDA52156A23F0068C361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0149FDA62156A23F0068C361 /* Build configuration list for PBXNativeTarget "StateMachineExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0149FDA72156A23F0068C361 /* Debug */,
+				0149FDA82156A23F0068C361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0149FD882156A23E0068C361 /* Project object */;
+}
